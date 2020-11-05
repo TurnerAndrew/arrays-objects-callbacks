@@ -17,7 +17,9 @@ var arr = [10,20,30];
   Return the first item in the given array.
 */
 
-//Code Here
+function first (arr){
+  return arr[0]
+}
 
 
 
@@ -32,7 +34,9 @@ var arr = [40,50,60];
   Return the last item in the given array.
 */
 
-//Code Here
+function last(arr){
+  return arr[arr.length - 1]
+}
 
 
 
@@ -47,7 +51,10 @@ var family = ['Tyler', 'Jordyn', 'Ryan', 'Chelsey', 'Ireland'];
   Loop through the given array and alert every item in the array.
 */
 
-//Code Here
+function looper(family){
+  for (i = 0; i < family.length; i++)
+  alert(family[i])
+}
 
 
 
@@ -62,7 +69,10 @@ var letters = ['A', 'B', 'C', 'D', 'E'];
   Loop backwards, starting at the end of the letters array, alerting every item in the array.
 */
 
-//Code Here
+function reversedLooper(letters){
+  for (i = letters.length - 1; i >= 0; i--)
+  alert(letters[i])
+}
 
 
 
@@ -77,7 +87,19 @@ var nums = [1,2,3,6,22,98,45,23,22,12];
   Return an array that contains the even numbers from the nums array.
 */
 
-//Code Here
+function evenFinder(nums){
+  let evenNums = []
+  
+  for (i = 0; i <= nums.length; i++) {
+    if (nums[i] % 2 === 0){
+      evenNums.push(nums[i]);
+        
+    }
+    console.log(evenNums)
+  }   
+  return evenNums
+}
+
 
 
 
@@ -106,8 +128,26 @@ var numbersArray = [1,2,34,54,55,34,32,11,19,17,54,66,13];
   and the second item in the array being the odds array (all the odd values from numbersArray).
 */
 
-//Code Here
+function divider(numbersArray){
+  let evenArray = []
+  let oddArray = []
+  let numbers = [evenArray, oddArray]
 
+  for (i = 0; i <= nums.length; i++) {
+    if (nums[i] % 2 === 0){
+      evenArray.push(nums[i]);
+    }
+  }
+
+  for (i = 0; i <= nums.length; i++) {
+    if (nums[i] % 2 != 0){
+       oddArray.push(nums[i]);
+      }
+  }
+  console.log(numbers)
+  return numbers
+
+}
 
 
 ////////// PROBLEM 7 //////////
